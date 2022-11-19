@@ -63,7 +63,17 @@ body {
   text-transform: uppercase;
   color: #ffffff;
 }
+.hero > h1{
+  font-weight: 900;
+    font-size: 44px;
+    line-height: calc(60 / 44);
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
 .button {
+  font-family: roboto;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -82,16 +92,15 @@ body {
 }
 /* ---------------work priorities------------------ */
 .work h3 {
-  font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: calc(16 / 14);
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: #212121;
 }
 .work p {
   font-size: 14px;
-  line-height: 24px;
+  line-height: calc(24 / 16);
   letter-spacing: 0.03em;
   color: #757575;
 }
@@ -123,6 +132,9 @@ body {
 .footer {
   background-color: #2f303a;
 }
+.footer a {
+  font-style: normal;
+}
 .address-link {
   font-size: 14px;
   line-height: 1.71;
@@ -143,9 +155,10 @@ body {
 
 /* -----------------------portfolio------------------------ */
 .button-select {
+  font-family: roboto;
   font-weight: 500;
   font-size: 16px;
-  line-height: 26px;
+  line-height: calc(26 / 16);
   text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
@@ -159,7 +172,6 @@ body {
   background-color: #ffffff;
 }
 .list-project h3 {
-  font-weight: 700;
   font-size: 18px;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
@@ -167,7 +179,6 @@ body {
 }
 
 .list-project p {
-  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
