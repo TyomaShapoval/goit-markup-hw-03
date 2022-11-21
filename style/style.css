@@ -298,6 +298,7 @@ background: #F5F4FA;
   color: #212121;
   margin-top: 20px;
   margin-bottom: 4px;
+  padding: 0px 24px;
 }
 
 .list-project p {
@@ -305,11 +306,16 @@ background: #F5F4FA;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
+  padding: 0px 24px;
 }
 .list-project {
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 94px;
+}
+.list-order {
+  outline: 1px solid #EEEEEE;
+  padding: 0px 0px 20px 0px;
 }
 .list-order:not(:nth-child(3n)) {
   margin-right: 30px;
