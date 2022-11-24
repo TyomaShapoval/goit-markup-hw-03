@@ -96,17 +96,11 @@ margin-right: 50px;
 /* --------------------hero-------------------- */
 .hero {
   background-color: #2f303a;
-  font-weight: 900;
-  font-size: 44px;
-  line-height: calc(60 / 44);
-  text-align: center;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  color: #ffffff;
   padding-top: 200px;
   padding-bottom: 200px;
+  text-align: center;
 }
-.hero > h1{
+.hero-text{
   font-weight: 900;
     font-size: 44px;
     line-height: calc(60 / 44);
@@ -114,7 +108,6 @@ margin-right: 50px;
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    max-width: 696px;
 }
 
 .button {
@@ -140,10 +133,12 @@ margin-right: 50px;
   background-color: #ffffff;
 }
 /* ---------------work priorities------------------ */
-.work {
-  padding-top: 94px;
+.section-work {
+padding-top: 94px;
   padding-bottom: 94px;
-  display: flex;
+}
+.work {
+ display: flex;
 }
 .work-list {
   min-width: 270px;
@@ -168,6 +163,7 @@ margin-right: 30px;
 /* -----------------we do------------------ */
 .we-do {
   background-color: #FFFFFF;
+  padding-bottom: 94px;
 }
 .div-we-do > h2 {
   font-size: 36px;
@@ -179,7 +175,10 @@ margin-right: 30px;
 .list-we-do {
   display: flex;
   margin-top: 50px;
-  margin-bottom: 94px;
+}
+.list-we-do > li {
+  line-height: 0;
+  display: block;
 }
 .list-we-do > li:not(:last-child) {
   margin-right: 30px;
@@ -239,8 +238,15 @@ margin-right: 30px;
   margin-top: 20px;
   line-height: 1.71;
 }
+.footer-list > li:not(:last-child) {
+  margin-bottom: 9px;
+}
 .footer a {
   font-style: normal;
+}
+.contact-link-footer {
+margin-bottom: 9px;
+display: block;
 }
 .address-link {
   font-size: 14px;
@@ -254,17 +260,22 @@ margin-right: 30px;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   cursor: pointer;
+  
 }
 .contact-link-footer:hover,
 .contact-link-footer:focus {
   color: var(--general-color);
 }
 
+
 /* -----------------------portfolio------------------------ */
+.filter-project {
+  margin-top: 94px;
+  padding-bottom: 94px;
+}
 .filter {
   display: flex;
   justify-content: center;
-  margin-top: 94px;
   margin-bottom: 50px;
 }
 .filter > li:not(:last-child) {
@@ -296,9 +307,7 @@ background: #F5F4FA;
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: #212121;
-  margin-top: 20px;
   margin-bottom: 4px;
-  padding: 0px 24px;
 }
 
 .list-project p {
@@ -306,16 +315,16 @@ background: #F5F4FA;
   line-height: calc(30 / 16);
   letter-spacing: 0.03em;
   color: #757575;
-  padding: 0px 24px;
+}
+.order-text {
+  padding: 20px 24px;
 }
 .list-project {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 94px;
 }
 .list-order {
   outline: 1px solid #EEEEEE;
-  padding: 0px 0px 20px 0px;
 }
 .list-order:not(:nth-child(3n)) {
   margin-right: 30px;
